@@ -12,10 +12,16 @@ $("input#address").val("");
 $("input#phone").val("");
 $("input#email").val("");
 }
+function resetPet(){
+$("input#pet-name").val("");
+$("input#type").val("");
+$("input#age").val("");
+$("input#weight").val("");
+}
 
 $(document).ready(function(){
   $(".dog1").click(function(){
-    $("#form-adopt").show();
+    $("#form-adopt").toggle();
     $("#form-adopt").submit(function(event){
       event.preventDefault();
       set();
@@ -27,7 +33,7 @@ $(document).ready(function(){
   });
 
   $(".dog2").click(function(){
-    $("#form-adopt").show();
+    $("#form-adopt").toggle();
     $("#form-adopt").submit(function(event){
       event.preventDefault();
       set();
@@ -39,7 +45,7 @@ $(document).ready(function(){
   });
 
   $(".cat1").click(function(){
-    $("#form-adopt").show();
+    $("#form-adopt").toggle();
     $("#form-adopt").submit(function(event){
       event.preventDefault();
       set();
@@ -51,7 +57,7 @@ $(document).ready(function(){
   });
 
   $(".cat2").click(function(){
-    $("#form-adopt").show();
+    $("#form-adopt").toggle();
     $("#form-adopt").submit(function(event){
       event.preventDefault();
       set();
@@ -63,7 +69,7 @@ $(document).ready(function(){
   });
 
   $(".animal").click(function(){
-    $("#form-adopt").show();
+    $("#form-adopt").toggle();
     $("#form-adopt").submit(function(event){
       event.preventDefault();
       set();
@@ -73,5 +79,13 @@ $(document).ready(function(){
       reset();
     });
   });
+
+  $("#pet-entry").submit(function(event){
+    var inputPetName = $("input#pet-name").val();
+    var inputType = $("input#type").val();
+    var inputAge = $("input#age").val();
+    var inputWeight = $("input#weight").val();
+    resetPet();
+    });
 
 });
