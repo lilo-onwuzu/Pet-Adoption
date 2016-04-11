@@ -1,0 +1,37 @@
+h1{
+  font-style: normal;
+  text-align: center;
+  font-family: Bangers;
+}
+
+
+h2 {
+  margin-left: 60%;
+}
+
+#cats-header {
+  margin-left: 40px;
+  width: 600px;
+  height: 450px;
+}
+
+#dogs-header {
+  margin-left: 30px;
+  width: 600px;
+  height: 450px;
+}
+
+.jumbotron {
+  background-color: #f9ecec;
+}
+
+/*.hidden {
+  display: none;
+
+}*/
+
+.adoptees {
+  width: 80%;
+  height: auto;
+  margin: 4px;
+}

@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <script src="js/jquery-1.12.2.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>We Love Our Pets</title>
-  </head>
-  <body>
-    <div class="jumbotron">
-      <h1>We Love Our Pets!</h1>
-      <h2>You Will Too</h2>
-      <img id="float-left" src="images/dogs.jpg" alt="Picture of a group of varying breeds of dogs">
-      <img id="float-right" src="images/cats.jpeg" alt="Painting of many cats by Carl Kahler">
-    </div>
-    <div class="container">
-      <h3></h3>
-      <div class="row">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Bangers'  rel='stylesheet' type='text/css'>
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="js/jquery-1.12.2.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>We Love Our Pets</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>We Love Our Pets!</h1>
+    <h2>...And You Will Too</h2>
+    <br>
+    <img id="dogs-header" src="images/dogs.jpg" alt="Picture of a group of varying breeds of dogs">
+    <img id="cats-header" src="images/cats.jpeg" alt="Painting of many cats by Carl Kahler">
+  </div>
+  <div class="container">
+    <h3></h3>
+    <div class="row">
 
-        <div class="col-sm-4">
-          <div class="dogs">
-            <!-- add image -->
-            <p></p>
-            <button type="button" class="btn btn-info">Adopt Me!</button>
-            <p class="hidden"></p>
-          </div>
-          <div class="dogs">
-            <!-- add image -->
-            <p></p>
-            <button type="button"  class="btn btn-info">Adopt Me!</button>
-            <p class="hidden"></p>
-          </div>
+      <div class="col-sm-4">
+
+        <div class="dogs">
+          <img class="adoptees" src="images/lhasa.jpeg" alt="Picture of a lhasa apso puppy">
+          <p>Lil' Wayne</p>
+          <button type="button" class="btn btn-info">Adopt Me!</button>
+          <p class="hidden">Wayne is a purebred delight - he won't be around long.   Young $ for life! Cuddle puddle waiting to happen.</p>
+
         </div>
 
-          <div class="col-sm-4">
-            <div class="cats">
-              <!-- add image -->
-              <p></p>
-              <button type="button" class="btn btn-info">Adopt Me!</button>
-              <p class="hidden"></p>
-            </div>
-            <div class="cats">
-              <!-- add image -->
-              <p></p>
-              <button type="button" class="btn btn-info">Adopt Me!</button>
-              <p class="hidden"></p>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="misc">
-              <!-- add image -->
-              <p></p>
-              <button type="button" class="btn btn-info">Adopt Me!</button>
-              <p class="hidden"></p>
-            </div>
-          </div>
+        <div class="dogs">
+          <img class="adoptees" src="images/portuguese.jpeg" alt="Picture of a Portuguese Water Dog">
+          <p>Harney</p>
+          <button type="button"  class="btn btn-info">Adopt Me!</button>
+          <p class="hidden">Harney is friendly and enthusiastic! He loves to run and exercise and is looking for an active owner.</p>
+        </div>
       </div>
 
-      <div id="form-adopt">
+      <div class="col-sm-4">
+        <div class="cats">
+          <img class="adoptees" src="images/ragdoll.jpeg" alt="Picture of a Ragdoll cat.">
+          <p>Fuzzy</p>
+          <button type="button" class="btn btn-info">Adopt Me!</button>
+          <p class="hidden">Fuzzy wuzzy was not a bear.  This Fuzzy has a whole lot of hair.  Don't call him fat!! It's just fur. :) </p>
+        </div>
 
-          <div class="form-group">
-            <label for="name">Enter Name:</label>
-            <input id="name" type="text">
-          </div>
-          <div class="form-group">
-            <label for="address">Enter Address:</label>
-            <input id="address" type="text">
-          </div>
-          <div class="form-group">
-            <label for="phone">Enter Phone Number:</label>
-            <input id="phone" type="text">
-          </div>
-          <div class="form-group">
-            <label for="email">Enter Email Address:</label>
-            <input id="email" type="text">
-          </div>
-          <button type="submit" name="btn btn-info">Submit!</button>
-          <div id="output">
-            <p>Got it! We will contact you within 3 business days.</p>
-          </div>
+        <div class="cats">
+          <img class="adoptees" src="images/tabby.jpeg" alt="Picture of an Orange Tabby Cat.">
+          <p>Meko</p>
+          <button type="button" class="btn btn-info">Adopt Me!</button>
+          <p class="hidden">Meko is a very calm kitty.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="misc">
+          <img class="adoptees" src="images/kangarat.jpeg" alt="Picture of Kangarat.">
+          <p>Diamond Dave</p>
+          <button type="button" class="btn btn-info">Adopt Me!</button>
+          <p class="hidden">He's just a gigolo, but everywhere he goes, people know the part he's playin'. </p>
+        </div>
+
       </div>
     </div>
-  </body>
+
+    <form id="form-adopt">
+
+      <div class="form-group">
+        <label for="name">Enter Name:</label>
+        <input id="name" type="text">
+      </div>
+      <div class="form-group">
+        <label for="address">Enter Address:</label>
+        <input id="address" type="text">
+      </div>
+      <div class="form-group">
+        <label for="phone">Enter Phone Number:</label>
+        <input id="phone" type="text">
+      </div>
+      <div class="form-group">
+        <label for="email">Enter Email Address:</label>
+        <input id="email" type="text">
+      </div>
+      <button type="submit" name="btn btn-info">Submit!</button>
+      <div id="output">
+        <p>Got it! We will contact you within 3 business days.</p>
+      </div>
+    </form>
+  </div>
+</body>
 </html>
